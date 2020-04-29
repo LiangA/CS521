@@ -67,4 +67,4 @@ class Center():
 
     # str function is a little bit informal way to present a object
     def __str__(self):
-        return f"This center is {self.name} located at {self.region}"
+        return f"This center is {self.name} located at {self.region}."

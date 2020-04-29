@@ -1,15 +1,14 @@
-import copy
 import Center
 class Driver():
     def __init__(self, driverID=""):
         self.driverID = driverID
         self.center = None
-        self.requests = []
+        self.__requests = []
 
     # update the request list of driver itself
     def update(self):
         if self.center != None:
-            self.requests = copy.deepcopy(self.center.requests)
+            self.__requests = self.center.requests
 
     # set driver id as a property, also set a getter of driver id
     @property
@@ -35,8 +34,8 @@ class Driver():
         if isinstance(center, Center.Center) or center == None:
             self._center = center
         else:
-            raise TypeError("center must be a Center class or None")
+            raise TypeError("center must be a Center class or None") 
 
-
-
- 
+    @property
+    def requests(self):
+        return self.__requests

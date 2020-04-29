@@ -15,3 +15,6 @@ class Request():
     @destination.setter
     def destination(self, description):
         self._description = description
+
+    def __str__(self):
+        return f"request {self.__requestID}"
