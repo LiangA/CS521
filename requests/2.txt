@@ -1,0 +1,5 @@
+6,first batch,E,B,13:04
+7,second batch,B,C,13:11
+8,second batch,A,D,13:20
+9,second batch,D,A,13:38
+10,second batch,E,D,13:55
